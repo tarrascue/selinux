@@ -176,7 +176,7 @@ systemctl status nginx
            ├─27324 nginx: master process /usr/sbin/nginx
            └─27325 nginx: worker process
 
-[root@otuslinux vagrant]# ss -lntp | grep LISTEN | grep nginx
+ss -lntp | grep LISTEN | grep nginx
 LISTEN     0      128          *:8099                     *:*                   users:(("nginx",pid=27325,fd=6),("nginx",pid=27324,fd=6))
 LISTEN     0      128         :::8099                    :::*                   users:(("nginx",pid=27325,fd=7),("nginx",pid=27324,fd=7))
 ```
