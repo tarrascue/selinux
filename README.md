@@ -158,7 +158,7 @@ type=AVC msg=audit(1587026115.008:1025): avc:  denied  { name_bind } for  pid=27
 	Allow access by executing:
 	# setsebool -P httpd_run_preupgrade 1
 ```
-Для устранения проблемы использовуем следующий переключатель: ```httpd_run_preupgrade``` установив в статус `1 (on)`__
+Для устранения проблемы использовуем следующий переключатель: httpd_run_preupgrade установив в статус `1 (on)`
 
 ```
 setsebool -P httpd_run_preupgrade 1
